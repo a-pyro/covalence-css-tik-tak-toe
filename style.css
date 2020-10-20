@@ -1,0 +1,26 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  background-color: #141414;
+}
+
+#board {
+  color: #f4f4f4;
+}
+
+h1 {
+  color: #f4f4f4;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(244, 244, 244, 0.7);
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.cell:hover {
+  cursor: pointer;
+  border-color: rgba(244, 244, 244, 1);
+}
