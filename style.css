@@ -2,23 +2,23 @@ body {
   font-family: 'Roboto Mono', monospace;
   text-align: center;
   background-color: #141414;
+  max-width: 500px;
+  color: #f4f4f4;
 }
 * {
   box-sizing: border-box;
 }
 
-#board {
-  color: #f4f4f4;
-}
-
-h1 {
-  color: #f4f4f4;
-}
-
 #row-1,
 #row-2,
 #row-3 {
-  margin: 0.5rem;
+  display: flex;
+}
+#board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .cell {
@@ -26,11 +26,11 @@ h1 {
   height: 50px;
   border: 1px solid rgba(244, 244, 244, 0.7);
   border-radius: 8px;
-  display: inline-block;
+  /* display: inline-block; */
   text-align: center;
-  line-height: 50px;
-
+  line-height: 40px;
   font-size: 3rem;
+  margin: 0.3rem;
 }
 
 .cell:hover {
