@@ -3,6 +3,7 @@ body {
   text-align: center;
   background-color: #141414;
   max-width: 500px;
+  margin: 0 auto;
   color: #f4f4f4;
 }
 * {
