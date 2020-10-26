@@ -79,8 +79,60 @@ function checkWinner() {
   // take the reference to the array
   //   count the x in the row, if sum = 3 x won
   const cellValues = document.querySelectorAll('.cell');
-
   console.log(cellValues);
+  //   console.log(cellValues[0].textContent);
   // check the first row
-  //   for (let i = 0)
+  let sumR1 = '';
+  let sumR2 = '';
+  let sumR3 = '';
+  let sumC1 = '';
+  let sumC2 = '';
+  let sumC3 = '';
+  let sumD1 = '';
+  let sumD2 = '';
+  let winner = '';
+
+  // if (cellValues[0].textContent === 'x' && cellValues[1].textContent === 'x' && cellValues[2].textContent === 'x') {
+
+  // }
+
+  //   check for x in first row
+  for (let i = 0; i < 3; i++) {
+    if (cellValues[i].textContent === 'x') {
+      // if all x sum => xxx => x win in the first row
+      sumR1 += cellValues[i].textContent;
+    }
+    // sumR1 += cellValues[i].textContent;
+  }
+  //   check for x in second row
+  for (let i = 3; i < 6; i++) {
+    if (cellValues[i].textContent === 'x') {
+      sumR2 += cellValues[i].textContent;
+    }
+  }
+
+  for (let i = 6; i < 9; i++) {
+    if (cellValues[i].textContent === 'x') {
+      sumR3 += cellValues[i].textContent;
+    }
+  }
+
+  //   check rows!
+  for (let i = 0; i < i + 3; i += 3) {
+    if (i === 9) {
+      break;
+    } else {
+      for (let j = i; j < j + 3; j++) {
+        if (cellValues[j].textContent === 'x') {
+          sumR2 += cellValues[j].textContent;
+        }
+      }
+    }
+  }
+
+  console.log('sumR1:', sumR1);
+  console.log('sumR2:', sumR2);
+  console.log('sumR3:', sumR3);
+
+  console.log(winner);
 }
