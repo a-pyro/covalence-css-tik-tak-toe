@@ -9,15 +9,29 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Welcome to Tic Tac Toe</h1>
-    <h3>
-      Game Turn: <span id="gameTurn"></span
-      ><button onclick="checkWinner()">check me</button>
-    </h3>
+    <div id="score">
+      <h4 id="score-x" class="animate__animated">
+        Wins For X: <span id="winX"></span>
+      </h4>
+      <h4 id="score-o" class="animate__animated">
+        Wins For O: <span id="winO"></span>
+      </h4>
+      <h4 id="score-draw" class="animate__animated">
+        Draws: <span id="draw"></span>
+      </h4>
+    </div>
+
+    <h3></h3>
+
+    <!-- <button onclick="checkWinner()">check me</button> -->
     <div id="board">
       <div id="row-1">
         <div class="cell" id="top-left"></div>
