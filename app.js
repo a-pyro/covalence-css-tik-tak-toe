@@ -282,8 +282,10 @@ function animateScore(scoreToAnimate) {
   }, 2000);
 }
 
+/* Need to check again
 function upadateScore(scoreCounter, idToUpdate) {
   scoreCounter++;
   const showWin = document.querySelector(idToUpdate);
   showWin.textContent = scoreCounter;
 }
+*/
